@@ -1,7 +1,7 @@
 /* fonts */
 @font-face {
   font-family: inter;
-  src: url('../assets/fonts/Inter-VariableFont_slnt,wght.ttf');
+  src: url("../assets/fonts/Inter-VariableFont_slnt,wght.ttf");
 }
 
 body {
@@ -12,13 +12,16 @@ body {
 /* override Default library styles */
 
 .md-form.md-outline input:focus:not([readonly]) + label,
-.md-form.md-outline label.active {
+.md-form.md-outline label.active,
+.md-form.md-outline
+  > input[type]:-webkit-autofill:not(.browser-default):not([type="search"])
+  + label {
   background: #2f3744;
 }
 
-.md-form.md-outline input[type='password'].invalid,
-.md-form.md-outline input[type='email'].invalid,
-.md-form.md-outline input[type='email']:focus.invalid {
+.md-form.md-outline input[type="password"].invalid,
+.md-form.md-outline input[type="email"].invalid,
+.md-form.md-outline input[type="email"]:focus.invalid {
   border-color: #de8e97;
   box-shadow: inset 0 0 0 1px #de8e97 !important;
 }
@@ -67,6 +70,7 @@ body {
   border-radius: 0px 24px 24px 0px;
   padding: 42px;
   height: 720px;
+  position: relative;
 }
 
 .subex-logo {
@@ -120,6 +124,8 @@ body {
 
 .support-container {
   margin-top: 32px;
+  position: absolute;
+  bottom: 24px;
 }
 
 .support-container a,
@@ -201,7 +207,6 @@ body {
   background: linear-gradient(225.52deg, #1a58db 0%, #1b202a 100%);
 }
 
-
 .show {
   display: block;
 }
@@ -211,17 +216,27 @@ body {
 }
 
 .visible {
-  visibility: hidden;
-}
-
-.in-visible {
   visibility: visible;
 }
 
+.in-visible {
+  visibility: hidden;
+}
+
 /* disable btn css */
-.btn.btn-primary:disabled{
-  background-color: #666D77 !important;
+.btn.btn-primary:disabled {
+  background-color: #666d77 !important;
   letter-spacing: 0;
   text-align: center;
 }
-
+/* common error msg style */
+.error-msg{
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 1.67;
+  letter-spacing: normal;
+  color: #de8e97;
+  margin-top: -30px;
+  margin-right: 14px
+}
