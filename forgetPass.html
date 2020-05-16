@@ -129,66 +129,42 @@
           <!-- right Container -->
           <div class="right-container">
             <!-- Horizontal material form -->
+            <h1 class="title-text">Forgot Password</h1>
+            <p class="description-text">
+                You can reset your password by requesting a Reset Password link to your registered email id.
+            </p>
             <div class="form-controller">
-              <h1 class="title-text">Sign in</h1>
-              <p class="description-text">
-                Use your registered Subex Account to sign in
-              </p>
               <form>
                 <!-- Grid row -->
-                <div class="form-group form-input">
+                <div class="form-group ">
                   <!-- Material input -->
-                  <div class="md-form md-outline form-lg">
+                  <div class="md-form md-outline">
                     <input
-                      id="email-input"
-                      class="form-control form-control-lg validate"
                       type="email"
+                      id="inputValidationEx67"
+                      class="form-control validate"
                     />
-                    <label for="email-input" data-error="wrong"
-                      >Username or Email</label
+                    <label
+                      for="inputValidationEx67"
+                      data-error="wrong"
+                      data-success="right"
+                      >Email</label
                     >
                   </div>
                 </div>
                 <!-- Grid row -->
 
                 <!-- Grid row -->
-                <!-- Large outline input -->
-                <div class="form-group form-input">
-                  <div class="md-form md-outline form-lg">
-                    <!-- <i class="fas fa-envelope  input-prefix"></i> -->
-                    <input
-                      id="form-lg"
-                      class="form-control form-control-lg validate"
-                      type="password"
-                    />
-                    <label for="form-lg" data-error="wrong">Password</label>
-                  </div>
-                </div>
-                <!-- Grid row -->
-
-                <!-- Grid row -->
                 <div class="form-group forget-pass-wrapper">
-                  <div class="forget-pass-link">
-                    <a href="/forgetPass.html">Forgot Password ?</a>
+                  <div  class="forget-pass-link">
+                   <a href="/forgetPass.html">Retry Signing in</a>
                   </div>
                   <button type="submit" class="btn btn-primary btn-md m-0">
-                    Sign in
+                    Send Link
                   </button>
                 </div>
                 <!-- Grid row -->
               </form>
-            </div>
-            <div class="error-container">
-              <h4 class="error-header"><span>2</span> Attempts left!</h4>
-              <p class="error-description">
-                You seem to have entered incorrect login credentials. Your
-                account will get blocked after 2 wrong attempts. Password is
-                case-sensitive. Click on ‘Forgot Password’ to create a new
-                password.
-              </p>
-            </div>
-            <div class="support-container">
-              <a href="">Need Help? <span>Contact Support</span></a>
             </div>
             <!-- Horizontal material form -->
           </div>
