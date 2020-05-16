@@ -10,6 +10,6 @@ $(document).ready(function() {
 
   $("#forget_pass_form").submit(function(e) {
     e.preventDefault();
-    window.location.replace("/resetConfirm.html");
+    window.location.replace("/pages/resetConfirm.html");
   });
 });
