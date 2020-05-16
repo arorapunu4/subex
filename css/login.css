@@ -11,8 +11,11 @@ body {
   align-items: center;
   justify-content: center;
 }
-
+.left-container .carousel-inner {
+  border-radius: 24px 0px 0px 24px;
+}
 .main-container-wrap {
+  width: 100%;
   border-radius: 24px;
   display: flex;
   align-self: center;
@@ -40,12 +43,43 @@ body {
   font-size: 14px;
   color: #9aa2ab;
 }
-.forget-pass-wrapper{
+.forget-pass-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.forget-pass-link a{
+.forget-pass-link a {
   font-size: 14px;
-  color:#FFFFFF;
+  color: #ffffff;
+}
+.left-container .carousel-caption {
+  position: absolute;
+  top: 50%;
+  left: 48px;
+  bottom: initial;
+  transform: translate(0%, -50%);
+  z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #fff;
+  text-align: left;
+  width: 500px;
+}
+.left-container .carousel-caption h3 {
+  color: #ffffff;
+  font-size: 32px;
+  letter-spacing: 0.25px;
+  line-height: 38px;
+}
+.left-container .carousel-caption p {
+  color: #ffffff;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 22px;
+  margin-top: 26px;
+}
+.left-container  .rgba-black-strong,
+.left-container .rgba-black-strong .rgba-black-strong:after {
+  opacity: 0.8;
+  background: linear-gradient(225.52deg, #1a58db 0%, #1b202a 100%);
 }
