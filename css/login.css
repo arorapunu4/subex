@@ -40,3 +40,12 @@ body {
   font-size: 14px;
   color: #9aa2ab;
 }
+.forget-pass-wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.forget-pass-link a{
+  font-size: 14px;
+  color:#FFFFFF;
+}
