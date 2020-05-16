@@ -1,7 +1,7 @@
 /* fonts */
 @font-face {
   font-family: inter;
-  src: url("../assets/fonts/Inter-VariableFont_slnt,wght.ttf");
+  src: url('../assets/fonts/Inter-VariableFont_slnt,wght.ttf');
 }
 
 body {
@@ -14,14 +14,21 @@ body {
 .md-form.md-outline input:focus:not([readonly]) + label,
 .md-form.md-outline label.active,
 .md-form.md-outline
-  > input[type]:-webkit-autofill:not(.browser-default):not([type="search"])
+  > input[type]:-webkit-autofill:not(.browser-default):not([type='search'])
   + label {
   background: #2f3744;
 }
 
-.md-form.md-outline input[type="password"].invalid,
-.md-form.md-outline input[type="email"].invalid,
-.md-form.md-outline input[type="email"]:focus.invalid {
+.md-form.md-outline input.invalid ~ label.active {
+  color: #de8e97 !important;
+}
+
+.md-form.md-outline input[type='password'].invalid,
+.md-form.md-outline input[type='password']:focus.invalid,
+.md-form.md-outline input[type='email'].invalid,
+.md-form.md-outline input[type='text'].invalid,
+.md-form.md-outline input[type='text']:focus.invalid,
+.md-form.md-outline input[type='email']:focus.invalid {
   border-color: #de8e97;
   box-shadow: inset 0 0 0 1px #de8e97 !important;
 }
@@ -32,6 +39,10 @@ body {
 
 .md-form.md-outline.form-lg label {
   transform: translateY(14px);
+}
+
+.md-form.form-lg .validate {
+  margin-bottom: 4px !important;
 }
 
 /* .md-form.md-outline input:focus:not([readonly]).invalid+label, */
@@ -123,12 +134,12 @@ body {
   font-size: 14px;
   color: #ffffff;
 }
-.forget-pass-link{
+.forget-pass-link {
   display: flex;
 }
-.forget-pass-link img{
+.forget-pass-link img {
   margin-right: 8px;
-  color:white;
+  color: white;
 }
 
 .support-container {
@@ -163,6 +174,16 @@ body {
 
 .form-input {
   margin-top: 30px;
+  position: relative;
+}
+
+.form-input img {
+  position: absolute;
+  right: 10px;
+  top: 18%;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
 }
 
 .form-input input {
@@ -170,13 +191,12 @@ body {
   font-size: 14px;
   color: white !important;
 }
-.form-control{
+.form-control {
   color: white !important;
 }
-.form-input input.invalid{
+.form-input input.invalid {
   color: #de8e97 !important;
 }
-
 
 .form-input label {
   font-size: 14px !important;
@@ -245,8 +265,15 @@ body {
   letter-spacing: 0;
   text-align: center;
 }
+
+.error-message {
+  color: #de8e97;
+  font-size: 12px;
+  visibility: hidden;
+}
+
 /* common error msg style */
-.error-msg{
+.error-msg {
   font-family: Inter;
   font-size: 12px;
   font-weight: normal;
@@ -254,5 +281,5 @@ body {
   letter-spacing: normal;
   color: #de8e97;
   margin-top: -30px;
-  margin-right: 14px
+  margin-right: 14px;
 }
