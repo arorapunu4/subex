@@ -2,6 +2,10 @@ body {
   background-color: #1b202a;
 }
 
+.md-form.md-outline input:focus:not([readonly]) + label {
+  background: #2f3744;
+}
+
 .controller-wrap {
   max-width: 1280px;
   width: 85%;
