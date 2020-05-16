@@ -44,3 +44,29 @@ body {
   font-size: 14px;
   color: #9aa2ab;
 }
+
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form-actions a,
+.form-actions button {
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.form-actions button {
+  padding: 9px 20px;
+  border-radius: 9px;
+}
+
+.form-actions button.disabled {
+  color: #666d77;
+}
+
+.error-container {
+    height: 80px;
+}
+
