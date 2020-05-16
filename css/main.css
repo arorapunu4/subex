@@ -45,6 +45,13 @@ body {
   margin-bottom: 4px !important;
 }
 
+.md-form.md-outline input[type='email'].valid,
+.md-form.md-outline input[type='password'].valid,
+.md-form.md-outline input[type='text'].valid {
+  border: 1px solid #dadce0;
+  box-shadow: none !important;
+}
+
 /* .md-form.md-outline input:focus:not([readonly]).invalid+label, */
 
 .controller-wrap {
