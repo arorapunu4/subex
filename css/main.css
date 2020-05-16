@@ -84,11 +84,13 @@ body {
 .title-text {
   font-size: 24px;
   color: #b5bdc6;
+  margin-bottom: 16px;
 }
 
 .description-text {
   font-size: 14px;
   color: #9aa2ab;
+  margin-bottom: 30px;
 }
 
 .forget-pass-wrapper {
@@ -120,6 +122,13 @@ body {
 .forget-pass-link a {
   font-size: 14px;
   color: #ffffff;
+}
+.forget-pass-link{
+  display: flex;
+}
+.forget-pass-link img{
+  margin-right: 8px;
+  color:white;
 }
 
 .support-container {
@@ -159,8 +168,15 @@ body {
 .form-input input {
   padding: 12px !important;
   font-size: 14px;
-  color: #9aa2ab !important;
+  color: white !important;
 }
+.form-control{
+  color: white !important;
+}
+.form-input input.invalid{
+  color: #de8e97 !important;
+}
+
 
 .form-input label {
   font-size: 14px !important;
