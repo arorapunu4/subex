@@ -1,143 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Subex</title>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"
+    />
+    <!-- Google Fonts Roboto -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+    />
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    <!-- Material Design Bootstrap -->
+    <link rel="stylesheet" href="bootstrap/css/mdb.min.css" />
+    <!-- Your custom styles (optional) -->
+    <link rel="stylesheet" href="css/login.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Subex</title>
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
-  <!-- Google Fonts Roboto -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
-  <!-- Bootstrap core CSS -->
-  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-  <!-- Material Design Bootstrap -->
-  <link rel="stylesheet" href="bootstrap/css/mdb.min.css">
-  <!-- Your custom styles (optional) -->
-  <link rel="stylesheet" href="css/login.css">
-</head>
-
-<body>
-
-  <!-- Start your project here-->
-  <main>
-    <div class="main-container-wrap">
-      <div class="left-container">
-        <!--Carousel Wrapper-->
-        <div id="carousel-example-2" class="carousel slide carousel-fade" data-ride="carousel">
-          <!--Indicators-->
-          <ol class="carousel-indicators">
-            <li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
-            <li data-target="#carousel-example-2" data-slide-to="1"></li>
-            <li data-target="#carousel-example-2" data-slide-to="2"></li>
-          </ol>
-          <!--/.Indicators-->
-          <!--Slides-->
-          <div class="carousel-inner" role="listbox">
-            <div class="carousel-item active">
-              <div class="view">
-                <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(68).jpg"
-                  alt="First slide">
-                <div class="mask rgba-black-light"></div>
+  <body>
+    <!-- Start your project here-->
+    <main>
+      <div class="controller-wrap">
+        <div class="main-container-wrap">
+          <div class="left-container">
+            <!--Carousel Wrapper-->
+            <div
+              id="carousel-example-2"
+              class="carousel slide carousel-fade"
+              data-ride="carousel"
+            >
+              <!--Indicators-->
+              <ol class="carousel-indicators">
+                <li
+                  data-target="#carousel-example-2"
+                  data-slide-to="0"
+                  class="active"
+                ></li>
+                <li data-target="#carousel-example-2" data-slide-to="1"></li>
+                <li data-target="#carousel-example-2" data-slide-to="2"></li>
+              </ol>
+              <!--/.Indicators-->
+              <!--Slides-->
+              <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                  <div class="view">
+                    <img
+                      class="d-block w-100"
+                      src="https://mdbootstrap.com/img/Photos/Slides/img%20(68).jpg"
+                      alt="First slide"
+                    />
+                    <div class="mask rgba-black-light"></div>
+                  </div>
+                  <div class="carousel-caption">
+                    <h3 class="h3-responsive">Light mask</h3>
+                    <p>First text</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <!--Mask color-->
+                  <div class="view">
+                    <img
+                      class="d-block w-100"
+                      src="https://mdbootstrap.com/img/Photos/Slides/img%20(6).jpg"
+                      alt="Second slide"
+                    />
+                    <div class="mask rgba-black-strong"></div>
+                  </div>
+                  <div class="carousel-caption">
+                    <h3 class="h3-responsive">Strong mask</h3>
+                    <p>Secondary text</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <!--Mask color-->
+                  <div class="view">
+                    <img
+                      class="d-block w-100"
+                      src="https://mdbootstrap.com/img/Photos/Slides/img%20(9).jpg"
+                      alt="Third slide"
+                    />
+                    <div class="mask rgba-black-slight"></div>
+                  </div>
+                  <div class="carousel-caption">
+                    <h3 class="h3-responsive">Slight mask</h3>
+                    <p>Third text</p>
+                  </div>
+                </div>
               </div>
-              <div class="carousel-caption">
-                <h3 class="h3-responsive">Light mask</h3>
-                <p>First text</p>
-              </div>
+              <!--/.Slides-->
+              <!--Controls-->
+              <a
+                class="carousel-control-prev"
+                href="#carousel-example-2"
+                role="button"
+                data-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a
+                class="carousel-control-next"
+                href="#carousel-example-2"
+                role="button"
+                data-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="sr-only">Next</span>
+              </a>
+              <!--/.Controls-->
             </div>
-            <div class="carousel-item">
-              <!--Mask color-->
-              <div class="view">
-                <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(6).jpg"
-                  alt="Second slide">
-                <div class="mask rgba-black-strong"></div>
-              </div>
-              <div class="carousel-caption">
-                <h3 class="h3-responsive">Strong mask</h3>
-                <p>Secondary text</p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <!--Mask color-->
-              <div class="view">
-                <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(9).jpg"
-                  alt="Third slide">
-                <div class="mask rgba-black-slight"></div>
-              </div>
-              <div class="carousel-caption">
-                <h3 class="h3-responsive">Slight mask</h3>
-                <p>Third text</p>
-              </div>
-            </div>
+            <!--/.Carousel Wrapper-->
           </div>
-          <!--/.Slides-->
-          <!--Controls-->
-          <a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
-          <!--/.Controls-->
+          <!-- right Container -->
+          <div class="right-container">
+            <!-- Horizontal material form -->
+            <h1 class="title-text">Sign in</h1>
+            <p class="description-text">
+              Use your registered Subex Account to sign in
+            </p>
+            <div class="form-controller">
+              <form>
+                <!-- Grid row -->
+                <div class="form-group ">
+                  <!-- Material input -->
+                  <div class="md-form md-outline">
+                    <input
+                      type="email"
+                      id="inputValidationEx67"
+                      class="form-control validate"
+                    />
+                    <label
+                      for="inputValidationEx67"
+                      data-error="wrong"
+                      data-success="right"
+                      >Username or Email</label
+                    >
+                  </div>
+                </div>
+                <!-- Grid row -->
+
+                <!-- Grid row -->
+                <!-- Large outline input -->
+                <div class="md-form md-outline form-lg">
+                  <input
+                    id="form-lg"
+                    class="form-control form-control-lg"
+                    type="text"
+                  />
+                  <label for="form-lg">Example label</label>
+                </div>
+                <!-- Grid row -->
+
+                <!-- Grid row -->
+                <div class="form-group ">
+                  <button type="submit" class="btn btn-primary btn-md m-0">
+                    Sign in
+                  </button>
+                </div>
+                <!-- Grid row -->
+              </form>
+            </div>
+            <!-- Horizontal material form -->
+          </div>
         </div>
-        <!--/.Carousel Wrapper-->
       </div>
-      <!-- right Container -->
-      <div class="right-container">
-        
-    
-          <!-- Horizontal material form -->
-<form>
-  <!-- Grid row -->
-  <div class="form-group ">
-    <!-- Material input -->
-    <div class="md-form md-outline">
-      <input type="email" id="inputValidationEx67" class="form-control validate">
-      <label for="inputValidationEx67" data-error="wrong" data-success="right">Username or Email</label>
-    </div>
-  </div>
-  <!-- Grid row -->
+    </main>
+    <!-- End your project here-->
 
-  <!-- Grid row -->
-  <div class="form-group ">
-    <!-- Material input -->
-    <div class="md-form md-outline">
-      <input type="password" id="inputValidationEx24" class="form-control validate">
-      <label for="inputValidationEx24" data-error="wrong" data-success="right">Password</label>
-    </div>
-  </div>
-  <!-- Grid row -->
-
-  <!-- Grid row -->
-  <div class="form-group ">
-    <div class="col-sm-10">
-      <button type="submit" class="btn btn-primary btn-md">Sign in</button>
-    </div>
-  </div>
-  <!-- Grid row -->
-</form>
-<!-- Horizontal material form -->
-    
-   
-      </div>
-    </div>
-  </main>
-  <!-- End your project here-->
-
-  <!-- jQuery -->
-  <script type="text/javascript" src="bootstrap/js/jquery.min.js"></script>
-  <!-- Bootstrap tooltips -->
-  <script type="text/javascript" src="bootstrap/js/popper.min.js"></script>
-  <!-- Bootstrap core JavaScript -->
-  <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
-  <!-- MDB core JavaScript -->
-  <script type="text/javascript" src="bootstrap/js/mdb.min.js"></script>
-  <!-- Your custom scripts (optional) -->
-  <script type="text/javascript"></script>
-
-</body>
-
+    <!-- jQuery -->
+    <script type="text/javascript" src="bootstrap/js/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="bootstrap/js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="bootstrap/js/mdb.min.js"></script>
+    <!-- Your custom scripts (optional) -->
+    <script type="text/javascript"></script>
+  </body>
 </html>
