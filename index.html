@@ -54,88 +54,81 @@
                 <div class="carousel-item active">
                   <div class="view">
                     <img
-                      class="d-block w-100"
-                      src="https://mdbootstrap.com/img/Photos/Slides/img%20(68).jpg"
+                      class="d-block"
+                      src="/assets/carousel_1.png"
                       alt="First slide"
                     />
-                    <div class="mask rgba-black-light"></div>
+                    <div class="mask rgba-black-strong"></div>
                   </div>
                   <div class="carousel-caption">
-                    <h3 class="h3-responsive">Light mask</h3>
-                    <p>First text</p>
+                    <h3 class="h3-responsive">
+                      Welcome to the Subex Next-Gen Platform
+                    </h3>
+                    <p>
+                      Subex, a leading telecom solutions provider today
+                      announced that it has been awarded a three-year contract
+                      from VIVA, Kuwait’s fastest-growing and most developed
+                      telecom operator.
+                    </p>
                   </div>
                 </div>
                 <div class="carousel-item">
                   <!--Mask color-->
                   <div class="view">
                     <img
-                      class="d-block w-100"
-                      src="https://mdbootstrap.com/img/Photos/Slides/img%20(6).jpg"
+                      class="d-block "
+                      src="/assets/carousel_2.png"
                       alt="Second slide"
                     />
                     <div class="mask rgba-black-strong"></div>
                   </div>
                   <div class="carousel-caption">
-                    <h3 class="h3-responsive">Strong mask</h3>
-                    <p>Secondary text</p>
+                    <h3 class="h3-responsive">
+                      Welcome to the Subex Next-Gen Platform
+                    </h3>
+                    <p>
+                      Subex, a leading telecom solutions provider today
+                      announced that it has been awarded a three-year contract
+                      from VIVA, Kuwait’s fastest-growing and most developed
+                      telecom operator.
+                    </p>
                   </div>
                 </div>
                 <div class="carousel-item">
                   <!--Mask color-->
                   <div class="view">
                     <img
-                      class="d-block w-100"
-                      src="https://mdbootstrap.com/img/Photos/Slides/img%20(9).jpg"
+                      class="d-block "
+                      src="/assets/carousel_3.png"
                       alt="Third slide"
                     />
-                    <div class="mask rgba-black-slight"></div>
+                    <div class="mask rgba-black-strong"></div>
                   </div>
                   <div class="carousel-caption">
-                    <h3 class="h3-responsive">Slight mask</h3>
-                    <p>Third text</p>
+                    <h3 class="h3-responsive">
+                      Welcome to the Subex Next-Gen Platform
+                    </h3>
+                    <p>
+                      Subex, a leading telecom solutions provider today
+                      announced that it has been awarded a three-year contract
+                      from VIVA, Kuwait’s fastest-growing and most developed
+                      telecom operator.
+                    </p>
                   </div>
                 </div>
               </div>
               <!--/.Slides-->
-              <!--Controls-->
-              <a
-                class="carousel-control-prev"
-                href="#carousel-example-2"
-                role="button"
-                data-slide="prev"
-              >
-                <span
-                  class="carousel-control-prev-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a
-                class="carousel-control-next"
-                href="#carousel-example-2"
-                role="button"
-                data-slide="next"
-              >
-                <span
-                  class="carousel-control-next-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="sr-only">Next</span>
-              </a>
-              <!--/.Controls-->
             </div>
-            <!--/.Carousel Wrapper-->
-          </div>
-          <!-- right Container -->
-          <div class="right-container">
             <!-- Horizontal material form -->
+          </div>
+          <div class="right-container">
             <div class="form-controller">
+              <img src='./assets/Subex_logo.png' class='subex-logo' />
               <h1 class="title-text">Sign in</h1>
               <p class="description-text">
                 Use your registered Subex Account to sign in
               </p>
               <form>
-                <!-- Grid row -->
                 <div class="form-group form-input">
                   <!-- Material input -->
                   <div class="md-form md-outline form-lg">
@@ -149,40 +142,37 @@
                     >
                   </div>
                 </div>
-                <!-- Grid row -->
-
-                <!-- Grid row -->
-                <!-- Large outline input -->
                 <div class="form-group form-input">
                   <div class="md-form md-outline form-lg">
                     <!-- <i class="fas fa-envelope  input-prefix"></i> -->
                     <input
-                      id="form-lg"
+                      id="password-input"
                       class="form-control form-control-lg validate"
                       type="password"
                     />
-                    <label for="form-lg" data-error="wrong">Password</label>
+                    <label for="password-input" data-error="wrong"
+                      >Password</label
+                    >
                   </div>
                 </div>
-                <!-- Grid row -->
-
-                <!-- Grid row -->
                 <div class="form-group forget-pass-wrapper">
                   <div class="forget-pass-link">
                     <a href="/forgetPass.html">Forgot Password ?</a>
                   </div>
-                  <button type="submit" class="btn btn-primary btn-md m-0">
+                  <button type="submit" class="btn btn-primary btn-md m-0 disabled">
                     Sign in
                   </button>
                 </div>
-                <!-- Grid row -->
               </form>
             </div>
             <div class="error-container">
-              <h4 class="error-header"><span>2</span> Attempts left!</h4>
+              <h4 class="error-header">
+                <span class="count">2</span> Attempts left!
+              </h4>
               <p class="error-description">
                 You seem to have entered incorrect login credentials. Your
-                account will get blocked after 2 wrong attempts. Password is
+                account will get blocked after
+                <span class="count">2</span> wrong attempts. Password is
                 case-sensitive. Click on ‘Forgot Password’ to create a new
                 password.
               </p>
@@ -190,7 +180,6 @@
             <div class="support-container">
               <a href="">Need Help? <span>Contact Support</span></a>
             </div>
-            <!-- Horizontal material form -->
           </div>
         </div>
       </div>
