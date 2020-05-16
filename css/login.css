@@ -201,6 +201,7 @@ body {
   background: linear-gradient(225.52deg, #1a58db 0%, #1b202a 100%);
 }
 
+
 .show {
   display: block;
 }
@@ -216,3 +217,11 @@ body {
 .in-visible {
   visibility: visible;
 }
+
+/* disable btn css */
+.btn.btn-primary:disabled{
+  background-color: #666D77 !important;
+  letter-spacing: 0;
+  text-align: center;
+}
+
