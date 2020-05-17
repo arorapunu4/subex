@@ -131,6 +131,7 @@ body {
   height: 100vh;
   position: relative;
   min-height: 720px;
+  max-width: 500px;
 }
 
 .subex-logo {
