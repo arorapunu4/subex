@@ -320,4 +320,10 @@ body {
 .form-controller{
   width: 100%;
 }
+.forget-pass-link img{
+  display: none;
+}
+.forget-pass-link a.return-login{
+margin-bottom: 30px;
+}
 }
