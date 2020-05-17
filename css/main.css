@@ -102,11 +102,12 @@ body {
 .controller-wrap {
   /* max-width: 1280px; */
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
+  min-height: 720px;
 }
 
 
@@ -118,8 +119,9 @@ body {
 
 .left-container {
   background-color: blue;
-  flex: 3;
+  flex: 4;
   height: 100vh;
+  min-height: 720px;
 }
 
 .right-container {
@@ -128,6 +130,7 @@ body {
   padding: 42px;
   height: 100vh;
   position: relative;
+  min-height: 720px;
 }
 
 .subex-logo {
@@ -150,21 +153,25 @@ body {
   width: 100%;
   display: block;
   height: 100vh;
+  min-height: 720px;
 }
 .left-container  .carousel-inner .view.img1{
   
     background-image: url(/assets/carousel_1.png);
     background-repeat: round;
+    background-size: cover;
 }
 .left-container  .carousel-inner .view.img2{
   
     background-image: url(/assets/carousel_2.png);
     background-repeat: round;
+    background-size: cover;
 }
 .left-container  .carousel-inner .view.img3{
 
     background-image: url(/assets/carousel_3.png);
     background-repeat: round;
+    background-size: cover;
 }
 
 .description-text {
@@ -318,12 +325,13 @@ body {
   .controller-wrap {
     max-width: initial;
     width: 100%;
-    min-height: 100vh;
+    height: 100vh;
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #2f3744;
+    min-height: 720px;
 }
 .left-container {
   display: none;
