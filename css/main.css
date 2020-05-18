@@ -11,6 +11,13 @@ body {
 }
 
 /* override Default library styles starts */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+    -webkit-text-fill-color: #fff !important;
+}
 .md-form.md-outline.form-lg .form-control.form-control-lg {
   border-radius: 8px;
 }
@@ -336,8 +343,9 @@ body {
 .reset-pass-msg b{
   color: #b5bdc6;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 14px;
   font-family:Inter-Regular_Bold;
+  letter-spacing: .5px;
 }
 /* media Query */
 @media screen and (max-width: 991px) {
@@ -374,3 +382,4 @@ body {
     margin-bottom: 30px;
   }
 }
+
