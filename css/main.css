@@ -1,7 +1,8 @@
 /* fonts */
 @font-face {
   font-family: inter;
-  src: url("../assets/fonts/Inter-VariableFont_slnt,wght.ttf");
+  src: url("../assets/fonts/Inter-Regular-slnt=0.ttf");
+
 }
 
 body {
@@ -21,7 +22,20 @@ body {
   + label {
   background: #2f3744;
 }
-
+.md-form.md-outline input[type="text"]:focus:not([readonly]),
+.md-form.md-outline input[type="password"]:focus:not([readonly]),
+.md-form.md-outline input[type="email"]:focus:not([readonly]),
+.md-form.md-outline input[type="url"]:focus:not([readonly]),
+.md-form.md-outline input[type="time"]:focus:not([readonly]),
+.md-form.md-outline input[type="date"]:focus:not([readonly]),
+.md-form.md-outline input[type="datetime-local"]:focus:not([readonly]),
+.md-form.md-outline input[type="tel"]:focus:not([readonly]),
+.md-form.md-outline input[type="number"]:focus:not([readonly]),
+.md-form.md-outline input[type="search-md"]:focus:not([readonly]),
+.md-form.md-outline input[type="search"]:focus:not([readonly]),
+.md-form.md-outline textarea.md-textarea:focus:not([readonly]) {
+  border: solid 1px #42cfc5;
+}
 .md-form.md-outline input.invalid ~ label.active {
   color: #de8e97 !important;
 }
@@ -110,7 +124,6 @@ body {
   min-height: 720px;
 }
 
-
 .main-container-wrap {
   width: 100%;
   display: flex;
@@ -147,7 +160,7 @@ body {
   color: #b5bdc6;
   margin-bottom: 16px;
 }
-.left-container  .carousel-inner .view{
+.left-container .carousel-inner .view {
   position: relative;
   overflow: hidden;
   cursor: default;
@@ -156,23 +169,24 @@ body {
   height: 100vh;
   min-height: 720px;
 }
-.left-container  .carousel-inner .view.img1{
-  
-    background-image: url(/assets/carousel_1.png);
-    background-repeat: round;
-    background-size: cover;
+.left-container .carousel-inner .view.img1 {
+  background-image: url(/assets/carousel_1.png);
+  background-repeat: round;
+  background-size: cover;
 }
-.left-container  .carousel-inner .view.img2{
-  
-    background-image: url(/assets/carousel_2.png);
-    background-repeat: round;
-    background-size: cover;
+.left-container .carousel-inner .view.img2 {
+  background-image: url(/assets/carousel_2.png);
+  background-repeat: round;
+  background-size: cover;
 }
-.left-container  .carousel-inner .view.img3{
-
-    background-image: url(/assets/carousel_3.png);
-    background-repeat: round;
-    background-size: cover;
+.left-container .carousel-inner .view.img3 {
+  background-image: url(/assets/carousel_3.png);
+  background-repeat: round;
+  background-size: cover;
+}
+.left-container .rgba-blue-strong, .left-container .rgba-black-strong .rgba-blue-strong:after {
+  /* opacity: 0.8; */
+  background: linear-gradient(225.52deg, #1a58db 0%, #1b202a 100%);
 }
 
 .description-text {
@@ -185,6 +199,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 40px;
 }
 
 .forget-pass-wrapper a,
@@ -207,11 +222,11 @@ body {
   visibility: hidden;
 }
 
-.forget-pass-link a {
+.forget-pass-link div {
   font-size: 14px;
   color: #ffffff;
 }
-.forget-pass-link {
+.forget-pass-link ,.forget-pass-link a{
   display: flex;
 }
 .forget-pass-link img {
@@ -318,10 +333,16 @@ body {
   font-size: 12px;
   visibility: hidden;
 }
+.reset-pass-msg b{
+  color: #b5bdc6;
+  font-weight: bold;
+  font-size: 16px;
+  font-family:Inter-Regular_Bold;
+}
 /* media Query */
 @media screen and (max-width: 991px) {
-  .main-container-wrap{
-    flex-wrap:wrap
+  .main-container-wrap {
+    flex-wrap: wrap;
   }
   .controller-wrap {
     max-width: initial;
@@ -333,23 +354,23 @@ body {
     justify-content: center;
     background-color: #2f3744;
     min-height: 720px;
-}
-.left-container {
-  display: none;
-}
-.subex-logo{
-  margin-bottom: 50px;
-}
-.right-container{
-  height: auto;
-}
-.form-controller{
-  width: 100%;
-}
-.forget-pass-link img{
-  display: none;
-}
-.forget-pass-link a.return-login{
-margin-bottom: 30px;
-}
+  }
+  .left-container {
+    display: none;
+  }
+  .subex-logo {
+    margin-bottom: 50px;
+  }
+  .right-container {
+    height: auto;
+  }
+  .form-controller {
+    width: 100%;
+  }
+  .forget-pass-link img {
+    display: none;
+  }
+  .forget-pass-link a.return-login {
+    margin-bottom: 30px;
+  }
 }
