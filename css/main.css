@@ -206,7 +206,6 @@ input:-webkit-autofill:active {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 40px;
 }
 
 .forget-pass-wrapper a,
@@ -301,7 +300,6 @@ input:-webkit-autofill:active {
   font-weight: normal;
   line-height: 1.67;
   color: #de8e97;
-  margin-top: -30px;
   margin-right: 14px;
 }
 

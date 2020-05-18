@@ -17,6 +17,7 @@ $(document).ready(function() {
 
   $("#forget_pass_form").submit(function(e) {
     e.preventDefault();
+    sessionStorage.setItem("email", $("#inputValidationEx67")[0].value);
     window.location.replace("/pages/resetConfirm.html");
   });
 });
