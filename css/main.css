@@ -42,6 +42,7 @@ input:-webkit-autofill:active {
 .md-form.md-outline input[type="search"]:focus:not([readonly]),
 .md-form.md-outline textarea.md-textarea:focus:not([readonly]) {
   border: solid 1px #42cfc5;
+  box-shadow: none !important
 }
 .md-form.md-outline input.invalid ~ label.active {
   color: #de8e97 !important;
