@@ -46,6 +46,7 @@ input:-webkit-autofill:active {
 }
 .md-form.md-outline input.invalid ~ label.active {
   color: #de8e97 !important;
+  box-shadow: none !important
 }
 
 .md-form.md-outline input[type="password"].invalid,
@@ -55,7 +56,7 @@ input:-webkit-autofill:active {
 .md-form.md-outline input[type="text"]:focus.invalid,
 .md-form.md-outline input[type="email"]:focus.invalid {
   border-color: #de8e97;
-  box-shadow: inset 0 0 0 1px #de8e97 !important;
+  box-shadow: none !important
 }
 
 .md-form.md-outline input.invalid:not([readonly]) + label {
